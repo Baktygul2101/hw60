@@ -43,3 +43,14 @@ function toggleComment(){
     document.getElementById('cmn').classList.toggle(showForm());
 
 }
+//task 2
+function createCommentElement(comment){
+    comment=document.querySelector('[name=text]').value;
+    let elem= document.createElement('p')
+    let name= document.createElement('href')
+    elem.innerHTML=comment;
+    name.innerHTML="Someone newUser";
+    name.style.fontWeight='bold';
+    document.getElementsByTagName('div')[0].append(name, elem);
+
+}

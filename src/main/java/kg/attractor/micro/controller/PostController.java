@@ -50,7 +50,7 @@ public class PostController {
         return "success";
     }
 
-    @GetMapping("/likes")
+    @GetMapping("/like")
     public String handleVotes(Model model) {
         model.addAttribute("posts", service.candidatesWithVotes());
         return "likes";

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>My posts</title>
     <link rel="stylesheet" href="/css/candidates.css">
-</head>
+   </head>
 
 <body>
 <div class="col col-lg-4 posts-container">
