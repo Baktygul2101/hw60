@@ -1,7 +1,7 @@
 'use strict';
 window.addEventListener('load', function () {
 
-    const user = fetch("http://localhost:8080/demo/getUser");
+    const user = fetch("http://localhost:8282/demo/getUser");
     console.log(user);
 
     const saveButton = document.getElementById("save-candidate");
@@ -9,10 +9,10 @@ window.addEventListener('load', function () {
         const candidateForm = document.getElementById("form");
         let data = new FormData(candidateForm);
 
-        fetch("http://localhost:8080/post", {
+        fetch("http://localhost:8282/post", {
             method: 'POST',
             body: data
-        }).then(r => r.json()).then(data => {window.location.href = "http://localhost:8080/"});
+        }).then(r => r.json()).then(data => {window.location.href = "http://localhost:8282/"});
     });
 
 });
